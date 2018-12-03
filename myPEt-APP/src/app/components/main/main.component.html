@@ -1,3 +1,8 @@
-<img [src]="imagem">
-<button (click)="exibirImagem()">Exibir Imagem</button>
+<p>{{meuHeroi}}</p>
+<li *ngFor='let hero of heroes'>
+    {{hero.NomeHeroi}} {{hero.NumeroId}}
+</li>
+
+
+
 

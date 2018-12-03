@@ -1,1 +1,7 @@
-<p>{{teste}}</p>
+<input type="text" [value]=nome (input)= 'enviar($event)'>
+<br>
+<br>
+<input type="text" [value]=sobreNome (input)= 'enviar($event)'>
+<br>
+<br>
+<button (click)="enviar()">Enviar</button>

@@ -1,5 +1,5 @@
+
 import { Component } from '@angular/core'
-import { Hero } from '../../models/hero.model'
 
 @Component({
     //selector é o nome que eu quero
@@ -13,13 +13,12 @@ import { Hero } from '../../models/hero.model'
 
 export class MainComponent {
 
-   heroes = [
+    public variavelDoMain: number = 3
 
-    //new Hero(1, 'Windstorm'),
-    //new Hero(13, 'Bombasto'),
-    //new Hero(15, 'Magneta'),
-    //new Hero(20, 'Tornado')
-   ];
+    public texto: string
 
-   //meuHeroi = this.heroes[1].NumeroId + ' ' + this.heroes[1].NomeHeroi
+    public Definirtexto(x: string): void {
+
+        this.texto = x
+    }
 }

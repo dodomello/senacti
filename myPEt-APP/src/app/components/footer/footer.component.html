@@ -1,3 +1,6 @@
-<textarea (input) = 'Enviar($event)'></textarea>
-<textarea (input) = ''></textarea>
-<button (click)="exibirImagem()">Enviar></button>
+<input type="text" [value]=texto1 (input)= 'enviar($event)'>
+<input type="text" [value]=texto2>
+
+<button (click)="mostrarImagem()">Mostrar</button>
+
+<img [src]='imagem'>
