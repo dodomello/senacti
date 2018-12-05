@@ -1,0 +1,80 @@
+.titulo {
+    font-size: 40px;
+    color: white;
+    
+  }
+
+  .inicio {
+
+    background-color: black
+  }
+
+  .menu {
+
+    padding: 20px 0
+  }
+
+  a:hover{
+    text-decoration: none;
+    color: white;
+  }
+  .botao{
+    padding: 5px 50px;
+    text-decoration: none;
+    color: white;
+    border-bottom: solid 3px;
+
+  }
+  .verde{
+    color: green;
+  }
+  .vermelho{
+    color: red;
+  }
+  .azul{
+    color: blue;
+  }
+  .amarelo{
+    color: yellow;
+  }
+  .branco{
+    color: white;
+  }
+  .verde:hover{
+    transition: 0.3s;
+    background-color: green;
+    border-bottom: solid green;
+  }
+  .vermelho:hover{
+    transition: 0.3s;
+    background-color: red;
+    border-bottom: solid red;
+  }
+  .azul:hover{
+    transition: 0.3s;
+    background-color: blue;
+    border-bottom: solid blue;
+  }
+  .amarelo:hover{
+    transition: 0.3s;
+    background-color: yellow;
+    border-bottom: solid yellow;
+  }
+  .branco:hover{
+    transition: 0.3s;
+    background-color: white;
+    border-bottom: solid white;
+  }
+  .header{
+    font-family: 'Roboto Condensed', sans-serif;
+    color:white;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 2px;
+    border-style: solid;
+    border-color: black;
+    padding: 10px;
+    background-color: black
+  }
+

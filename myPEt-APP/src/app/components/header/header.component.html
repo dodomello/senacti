@@ -1,3 +1,4 @@
+<div>
 <input type="text" [value]=nome (input)= 'enviar($event)'>
 <br>
 <br>
@@ -5,3 +6,11 @@
 <br>
 <br>
 <button (click)="enviar()">Enviar</button>
+
+<li #ngFor="Let pessoa for pessoas">
+
+    {{pessoa.nome}}
+    {{pessoa.sobreNome}}
+</li>
+</div>
+
