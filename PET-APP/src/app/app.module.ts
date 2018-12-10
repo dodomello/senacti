@@ -10,6 +10,9 @@ import { ServicosComponent } from './components/servicos/servicos.component';
 import { ProdutosComponent } from './components/produtos/produtos.component';
 import { GaleriaComponent } from './components/galeria/galeria.component';
 import { ContatoComponent } from './components/contato/contato.component';
+import { RotaConstante } from './app.route';
+import { RouterModule } from '@angular/router';
+import { ProdutoComponent } from './components/produtos/produto/produto.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +23,13 @@ import { ContatoComponent } from './components/contato/contato.component';
     ServicosComponent,
     ProdutosComponent,
     GaleriaComponent,
-    ContatoComponent
+    ContatoComponent,
+    ProdutoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(RotaConstante)
   ],
   providers: [],
   bootstrap: [AppComponent]

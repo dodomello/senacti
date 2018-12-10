@@ -4,12 +4,11 @@
     background-color: black;
     height: 100px;
     bottom: 0px;
-    position: absolute;
     text-align: center;
     width: 100%
   }
 
-  .osso {
+  .caveira { 
 
     height: 40px;
 	line-height: 80px;

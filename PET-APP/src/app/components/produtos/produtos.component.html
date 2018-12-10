@@ -1,3 +1,6 @@
-<p>
-  produtos works!
-</p>
+<li *ngFor="let produto of produtos">
+  {{produto.id}}
+  {{produto.nome}}
+  <!-- {{produto.descricao}} -->
+  {{produto.valor}}
+</li>
