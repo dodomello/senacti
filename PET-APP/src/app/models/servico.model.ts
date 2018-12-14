@@ -1,4 +1,4 @@
- export class Produto {
+export class Servico {
 
     public id
     public nome 

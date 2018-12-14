@@ -1,6 +1,5 @@
 .titulo {
     font-size: 80px;
-    color: white;
   }
 
   .inicio {
@@ -18,31 +17,31 @@
     color: white;
   }
   .botao{
-    padding: 5px 50px;
+    padding: 5px 90px;
     text-decoration: none;
     color: white;
     border-bottom: solid 3px;
 
   }
   .verde{
-    color: green;
+    color: red;
   }
   .vermelho{
     color: red;
   }
   .azul{
-    color: blue;
+    color: red;
   }
   .amarelo{
-    color: yellow;
+    color: red;
   }
   .branco{
-    color: white;
+    color: red;
   }
   .verde:hover{
     transition: 0.3s;
-    background-color: green;
-    border-bottom: solid green;
+    background-color: red;
+    border-bottom: solid red;
   }
   .vermelho:hover{
     transition: 0.3s;
@@ -51,18 +50,18 @@
   }
   .azul:hover{
     transition: 0.3s;
-    background-color: blue;
-    border-bottom: solid blue;
+    background-color: red;
+    border-bottom: solid red;
   }
   .amarelo:hover{
     transition: 0.3s;
-    background-color: yellow;
-    border-bottom: solid yellow;
+    background-color: red;
+    border-bottom: solid red;
   }
   .branco:hover{
     transition: 0.3s;
-    background-color: white;
-    border-bottom: solid white;
+    background-color: red;
+    border-bottom: solid red;
   }
   .header{
     font-family: 'Roboto Condensed', sans-serif;

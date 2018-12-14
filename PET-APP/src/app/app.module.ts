@@ -13,6 +13,7 @@ import { ContatoComponent } from './components/contato/contato.component';
 import { RotaConstante } from './app.route';
 import { RouterModule } from '@angular/router';
 import { ProdutoComponent } from './components/produtos/produto/produto.component';
+import { ServicoComponent } from './components/servicos/servico/servico.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ProdutoComponent } from './components/produtos/produto/produto.componen
     ProdutosComponent,
     GaleriaComponent,
     ContatoComponent,
-    ProdutoComponent
+    ProdutoComponent,
+    ServicoComponent
   ],
   imports: [
     BrowserModule,

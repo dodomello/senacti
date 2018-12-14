@@ -5,6 +5,7 @@ import { ProdutosComponent } from './components/produtos/produtos.component';
 import { GaleriaComponent} from './components/galeria/galeria.component';
 import { ContatoComponent} from './components/contato/contato.component'
 import { ProdutoComponent } from './components/produtos/produto/produto.component';
+import { ServicoComponent } from './components/servicos/servico/servico.component'
 
 
 
@@ -12,6 +13,7 @@ export const RotaConstante: Routes = [
 
     { path: 'main', component: MainComponent },
     { path: 'servicos', component: ServicosComponent},
+    { path: 'servicos/:id', component: ServicoComponent},
     { path: 'produtos', component: ProdutosComponent},
     { path: 'produtos/:id', component: ProdutoComponent},
     { path: 'galeria', component: GaleriaComponent},

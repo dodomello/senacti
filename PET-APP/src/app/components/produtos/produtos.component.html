@@ -1,7 +1,42 @@
-<li *ngFor="let produto of produtos">
-  {{produto.id}}
-  {{produto.nome}}
-  <!-- {{produto.descricao}} -->
-  {{produto.valor}}
-  <a [routerLink]="['/produtos', produto.id]">Mais Detalhes</a>
-</li>
+<div class="container">
+  <div class="row">
+      <div class="col-md-3 menu">
+          <div class="card" style="width: 18rem;">
+            <ul  class="list-group list-group-flush">
+              <li class="list-group-item" *ngFor="let produto of produtos">
+                <p>Produto:</p>
+              </li>
+            </ul>
+        </div>
+        </div>
+      <div class="col-md-3 menu">
+      <div class="card" style="width: 18rem;">
+        <ul  class="list-group list-group-flush">
+          <li class="list-group-item" *ngFor="let produto of produtos">
+            <p>{{produto.nome}}</p>
+          </li>
+        </ul>
+    </div>
+    </div>
+    <div class="col-md-3 menu">
+    <div class="card" style="width: 18rem;">
+        <ul  class="list-group list-group-flush">
+            <li class="list-group-item" *ngFor="let produto of produtos">
+            <p>R$ {{produto.valor}}</p>
+            </li>
+           </ul>
+    </div>
+    </div> 
+    <div class="col-md-3 menu">
+    <div class="card" style="width: 18rem;">
+        <ul  class="list-group list-group-flush">
+            <li class="list-group-item" *ngFor="let produto of produtos">
+                <p><a [routerLink]="['/produtos', produto.id]">Mais Detalhes</a></p>
+            </li>
+           </ul>
+    </div>
+    </div>
+  </div>
+</div>
+
+

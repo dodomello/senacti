@@ -1,3 +1,42 @@
-<p>
-  servicos works!
-</p>
+  <div class="container">
+        <div class="row">
+            <div class="col-md-3 menu">
+            <div class="card" style="width: 18rem;">
+                <ul  class="list-group list-group-flush">
+                  <li class="list-group-item" *ngFor="let servico of servicos">
+                   <p>Serviço:</p>
+                  </li>
+                </ul>
+            </div>
+            </div>
+            <div class="col-md-3 menu">
+            <div class="card" style="width: 18rem;">
+              <ul  class="list-group list-group-flush">
+                <li class="list-group-item" *ngFor="let servico of servicos">
+                  <p>{{servico.nome}}</p>
+                </li>
+              </ul>
+          </div>
+          </div>
+          <div class="col-md-3 menu">
+          <div class="card" style="width: 18rem;">
+              <ul  class="list-group list-group-flush">
+                  <li class="list-group-item" *ngFor="let servico of servicos">
+                  <p>R$ {{servico.valor}}</p>
+                  </li>
+                 </ul>
+          </div>
+          </div> 
+          <div class="col-md-3 menu">
+          <div class="card" style="width: 18rem;">
+              <ul  class="list-group list-group-flush">
+                  <li class="list-group-item" *ngFor="let servico of servicos">
+                      <p><a [routerLink]="['/servicos', servico.id]">Mais Detalhes</a></p>
+                  </li>
+                 </ul>
+          </div>
+          </div>
+        </div>
+      </div>
+      
+  
