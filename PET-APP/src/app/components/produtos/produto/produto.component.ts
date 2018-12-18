@@ -15,9 +15,15 @@ export class ProdutoComponent implements OnInit {
 
   constructor(private route: ActivatedRoute, private produtosService: ProdutosService) { }
 
-  ngOnInit() { this.produto = this.produtosService.getProdutoPorId(this.route.snapshot.params['id'])
+  ngOnInit() { 
+    
+    this.produto = this.produtosService.getProdutoPorId(this.route.snapshot.params['id'])
 
           console.log(this.produto)
+    
+    this.produtosService.getProdutoPorIdAPI(this.route.snapshot.params['id']).then((prod: Produto)=>{console.log(prod)
+      
+      this.produto = prod[0]})
   }
 
 }

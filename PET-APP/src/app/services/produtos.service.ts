@@ -126,5 +126,10 @@ import { Http } from '@angular/http';
         return this.http.get('http://localhost:3000/produtos').toPromise().then((prod: any)=>prod.json())
     }
 
+    public getProdutoPorIdAPI(id: number): Promise<Produto> {
+        
+        return this.http.get(`http://localhost:3000/produtos?id=${id}`).toPromise().then((prod: any)=>prod.json())
+    }
+
 
 }
