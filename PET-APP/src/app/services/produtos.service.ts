@@ -1,8 +1,15 @@
 import { Produto } from '../models/produto.model';
+import { reject } from 'q';
+import { Injectable } from '@angular/core';
+import { Http } from '@angular/http';
 
-export class ProdutosService {
+@Injectable() export class ProdutosService {
 
-    public produtos: Produto[] = 
+    constructor (private http: Http) {
+
+    }
+
+        public produtos: Produto[] = 
 
  [
      {   id:1,
@@ -23,7 +30,7 @@ export class ProdutosService {
     {
         id:3,
         nome: 'DVD AC/DC',
-        descricao: 'Gravado na Argentina no estadio do River Plata',
+        descricao: 'Gravado na Argentina no estadio do River Plate',
         valor: '60,00',
         imagem: 'dvd.png'
 
@@ -97,6 +104,26 @@ export class ProdutosService {
         let produtosInternos: Produto[]
         produtosInternos = this.getProdutos()
         return produtosInternos[id -1]
+    }
+
+    public getProdutosPromise(): Promise<Produto[]> {
+
+        return new Promise ((resolve,reject) => {
+
+            let funfou =  true
+
+                if (funfou) {
+
+            resolve(this.produtos)
+                }
+                else 
+            reject({tipo_erro: 'produto-falso', mensagem: 'Sua produto nao é original'})
+        })
+    }
+
+    public getProdutosPromiseAPI(): Promise<Produto[]> {
+
+        return this.http.get('http://localhost:3000/produtos').toPromise().then((prod: any)=>prod.json())
     }
 
 

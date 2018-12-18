@@ -18,7 +18,8 @@ export class ProdutosComponent implements OnInit {
 
   ngOnInit() {
 
-      this.produtos = this.produtosService.getProdutos()
+      this.produtosService.getProdutosPromise().then((prod: Produto[]) => { this.produtos = prod}, (erro: any) => {console.log(erro)})
+
   }
 
 }
